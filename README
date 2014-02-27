@@ -1,0 +1,26 @@
+
+'prune-old-builds' is a script to prune old builds.
+
+
+Usage:
+  $ ./prune-old-builds [options] <directory>
+
+
+Available options:
+
+--dry-run
+        Don't delete anything, but say what would be deleted.
+
+--prefix <prefix>
+        Prefix of the directories to be removed. Default is 'tbb-nightly-'.
+
+--days <n>
+        Number of days that we should keep. Default is 6.
+
+--weeks <n>
+        Number of monday builds that we should keep. Default is 3.
+
+--months <n>
+        Number of 1st day of the month builds that we should keep.
+        Default is 3.
+
